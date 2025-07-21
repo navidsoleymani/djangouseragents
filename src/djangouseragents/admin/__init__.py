@@ -1,0 +1,2 @@
+from .user_agent_device import UserAgentDeviceModelAdmin
+from .user_agent_request import UserAgentRequestModelAdmin

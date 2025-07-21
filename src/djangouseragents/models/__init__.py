@@ -1,0 +1,2 @@
+from .user_agent_device import UserAgentDevice as UserAgentDeviceModel
+from .user_agent_request import UserAgentRequest as UserAgentRequestModel

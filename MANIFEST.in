@@ -1,0 +1,34 @@
+# Include essential metadata files
+include pyproject.toml
+include LICENSE
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+
+# Include all Markdown documentation files in the root
+include *.md
+
+# Include setup configuration files if any
+include setup.cfg
+include setup.py
+
+# Include all translation files (e.g., locale folders)
+recursive-include src/djangouseragents/locale *
+
+# Include Django templates (HTML, etc.)
+recursive-include src/djangouseragents/templates *
+
+# Include static assets (CSS, JavaScript, images, fonts, etc.)
+recursive-include src/djangouseragents/static *
+
+# Include type hint stub files if present
+recursive-include src/djangouseragents/typings *
+
+# Include any scripts or CLI utilities
+recursive-include src/djangouseragents/scripts *
+
+# Exclude Python bytecode and caches
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+
+# Exclude test directories from the package to keep it clean
+prune tests
