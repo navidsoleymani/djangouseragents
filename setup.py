@@ -4,8 +4,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='DjangoUserAgents',
-    version='0.1.0',
+    name='DjangoUserAgent',
+    version='0.0.1',
     author='Hydra',
     author_email='navidsoleymani@ymail.com',
     description=(
