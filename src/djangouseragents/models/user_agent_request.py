@@ -46,7 +46,7 @@ class UserAgentRequest(models.Model):
         default='#06d6a0',
     )
     status = models.CharField(
-       verbose_name= _('Status'),
+        verbose_name=_('Status'),
         choices=StatusChoices.choices,
         max_length=64,
         default=StatusChoices.NORMAL,
@@ -86,7 +86,7 @@ class UserAgentRequest(models.Model):
         verbose_name = _('User Agent Request')
         verbose_name_plural = _('User Agent Requests')
         indexes = [
-            models.Index(fields=['uad', 'created_dt']),
+            models.Index(fields=['uad', 'created_dt'], name='idx_uad_created_dt'),
         ]
 
     def save(self, **kwargs):

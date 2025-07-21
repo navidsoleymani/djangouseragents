@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='DjangoUserAgent',
-    version='0.0.2',
+    version='0.0.3',
     author='Hydra',
     author_email='navidsoleymani@ymail.com',
     description=(
